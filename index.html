@@ -42,6 +42,7 @@
 
         .episodios {
             width: 90%;
+            max-width: 800px;
             margin: auto;
             padding-bottom: 30px;
         }
@@ -52,6 +53,16 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 5px #ccc;
+        }
+
+        .espacio-caratula {
+            border: 2px dashed #ccc;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #666;
+            border-radius: 6px;
+            background-color: #fafafa;
         }
 
         audio {
@@ -81,7 +92,7 @@
     </header>
 
     <div class="portada">
-        <img src="Portada 3_2.png" alt="Portada del Podcast">
+        <img src="./Portada.png" alt="Portada del Podcast" width="400">
     </div>
 
     <div class="descripcion">
@@ -92,54 +103,120 @@
         </p>
     </div>
 
+    <section>
+        <div class="episodios">
+            <h2>Presentación</h2>
+            <audio controls>
+                <source src="Speech.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+    </section>
+
     <section class="episodios">
+        <h2>Nuestros Episodios</h2>
 
-        <div class="episodio">
-            <h2>Episodio 1: El uso de la Inteligencia Artificial</h2>
-            <p>
-                Reflexionamos sobre las ventajas y desafíos de la inteligencia
-                artificial en la educación y en la vida cotidiana.
-            </p>
+       <!-- Grupo 1 -->
+       <article class="episodio">
+    <img src="caratulas/caratula1.jpg" alt="Carátula Grupo 1" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+    <h2>Grupo 1: Historias de Vida</h2>
+    <p><strong>Integrantes:</strong> Paula Acosta -  Claudia DeCésare - Florencia XX - Roxana Santos</p>
+    <p>Contamos historias y anécdotas que se escuchan y suceden en los pasillos de nuestra escuela.</p>
+    <audio controls>
+        <source src="grupo1.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+         </audio>
+      </article>
 
+        <!-- Grupo 2 -->
+        <article class="episodio">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 2 ]</span>
+            </div>
+            <h2>Grupo 2: XXX</h2>
+            <p><strong>Integrantes:</strong> XXX</p>
+            <p>Experiencias paranormales de ayer y hoy.</p>
             <audio controls>
-                <source src="episodio1.mp3" type="audio/mpeg">
+                <source src="grupo2.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
-        </div>
+        </article>
 
-        <div class="episodio">
-            <h2>Episodio 2: Emprender en una ciudad pequeña</h2>
-            <p>
-                Entrevistas y experiencias de emprendedores locales.
-            </p>
-
+        <!-- Grupo 3 -->
+        <article class="episodio">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 3 ]</span>
+            </div>
+            <h2>Grupo 3: XXX</h2>
+            <p><strong>Integrantes:</strong> XXX</p>
+            <p>Experiencias y testimonios de personas que atraviesan problemas de salud mental.</p>
             <audio controls>
-                <source src="episodio2.mp3" type="audio/mpeg">
+                <source src="grupo3.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
-        </div>
+        </article>
 
-        <div class="episodio">
-            <h2>Episodio 3: Volver a estudiar de adultos</h2>
-            <p>
-                Experiencias y testimonios de nuestros estudiantes.
-            </p>
-
+        <!-- Grupo 4 -->
+        <article class="episodio">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 4 ]</span>
+            </div>
+            <h2>Grupo 4: XXX</h2>
+            <p><strong>Integrantes:</strong> XXX</p>
+            <p>Les contamos sobre este nuevo tipo de carne en el mercado local.</p>
             <audio controls>
-                <source src="episodio3.mp3" type="audio/mpeg">
+                <source src="grupo4.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
-        </div>
+        </article>
+
+        <!-- Grupo 5 -->
+        <article class="episodio">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 5 ]</span>
+            </div>
+            <h2>Grupo 5: XXX</h2>
+            <p><strong>Integrantes:</strong>XXX</p>
+            <p>Recetas varias.</p>
+            <audio controls>
+                <source src="grupo5.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </article>
+
+        <!-- Grupo 6 -->
+        <article class="episodio">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 6 ]</span>
+            </div>
+            <h2>Grupo 6: XXX</h2>
+            <p><strong>Integrantes:</strong> XXX</p>
+            <p>La historia y evolución de los diferentes estilos de música que escuchamos a través de los años.</p>
+            <audio controls>
+                <source src="grupo6.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </article>
+
+        <!-- Grupo 7 -->
+        <article class="episodio">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 7 ]</span>
+            </div>
+            <h2>Grupo 7: XXX</h2>
+            <p><strong>Integrantes:</strong> XXX</p>
+            <p>Cómo afecta la tecnología y principalmente la IA en nuestras vidas.</p>
+            <audio controls>
+                <source src="grupo7.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </article>
 
     </section>
 
     <footer>
-        <p>
-            Proyecto Podcast Escolar 2026 
-        </p>
-        <p>
-            © 2026 - Prof. Mariela L. Loza. Todos los derechos reservados.
-        </p>
+        <p>Proyecto Podcast Escolar 2026</p>
+        <p>© Prof. Mariela L. Loza. Todos los derechos reservados.</p>
     </footer>
 
 </body>
