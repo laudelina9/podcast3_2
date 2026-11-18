@@ -9,28 +9,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+            background-color: #f1f8e9; /* Fondo verde muy suave y cálido */
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #1f4e79;
+            background: linear-gradient(135deg, #2e7d32, #1b5e20); /* Degradé verde vibrante */
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 35px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        header h3 {
+            font-weight: normal;
+            opacity: 0.95;
         }
 
         .portada {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .portada img {
-            width: 300px;
+            width: 320px;
             max-width: 90%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(46, 125, 50, 0.25);
+            border: 3px solid #81c784;
         }
 
         .descripcion {
@@ -38,6 +51,8 @@
             margin: auto;
             text-align: center;
             padding: 20px;
+            color: #2c3e50;
+            font-size: 1.1em;
         }
 
         .episodios {
@@ -49,37 +64,54 @@
 
         .episodio {
             background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px #ccc;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+            border-left: 6px solid #4caf50; /* Acento verde en cada tarjeta de grupo */
         }
 
         .espacio-caratula {
-            border: 2px dashed #ccc;
+            border: 2px dashed #a5d6a7;
             padding: 15px;
             text-align: center;
             margin-bottom: 15px;
-            color: #666;
-            border-radius: 6px;
-            background-color: #fafafa;   
+            color: #388e3c;
+            border-radius: 8px;
+            background-color: #f1f8e9;   
+        }
+
+        .caja-comentarios {
+            margin-top: 25px;
+            border-top: 1px solid #e8f5e9;
+            padding-top: 15px;
         }
 
         audio {
             width: 100%;
             margin-top: 10px;
+            accent-color: #2e7d32; /* Reproductor de audio estilizado en verde */
         }
 
         footer {
-            background-color: #1f4e79;
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
         }
 
         h2 {
-            color: #1f4e79;
+            color: #2e7d32;
+        }
+
+        .seccion-presentacion {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+            border-left: 6px solid #81c784;
         }
     </style>
 </head>
@@ -93,7 +125,7 @@
     </header>
 
     <div class="portada">
-        <img src="./Portada 3_2.jpg" alt="Portada del Podcast" width="400">
+        <img id="img-portada" src="Portada 3_2.png" alt="Portada del Podcast" width="400">
     </div>
 
     <div class="descripcion">
@@ -106,11 +138,13 @@
 
     <section>
         <div class="episodios">
-            <h2>Presentación</h2>
-            <audio controls>
-                <source src="Speech.mp3" type="audio/mpeg">
-                Tu navegador no soporta audio.
-            </audio>
+            <div class="seccion-presentacion">
+                <h2>Presentación</h2>
+                <audio controls>
+                    <source src="Speech.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
         </div>
     </section>
 
@@ -129,7 +163,8 @@
             </audio>
 
             <!-- Comentarios Giscus Grupo 1 -->
-            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+            <div class="caja-comentarios">
+                <div class="giscus"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -162,7 +197,8 @@
             </audio>
 
             <!-- Comentarios Giscus Grupo 2 -->
-            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+            <div class="caja-comentarios">
+                <div class="giscus"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -197,7 +233,8 @@
             </audio>
 
             <!-- Comentarios Giscus Grupo 3 -->
-            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+            <div class="caja-comentarios">
+                <div class="giscus"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -232,7 +269,8 @@
             </audio>
 
             <!-- Comentarios Giscus Grupo 4 -->
-            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+            <div class="caja-comentarios">
+                <div class="giscus"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -265,7 +303,8 @@
             </audio>
 
             <!-- Comentarios Giscus Grupo 5 -->
-            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+            <div class="caja-comentarios">
+                <div class="giscus"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -292,6 +331,20 @@
         <p>Proyecto Podcast Escolar 2026</p>
         <p>© Prof. Mariela L. Loza. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Respaldo automático por si la portada tiene otra mayúscula o extensión -->
+    <script>
+        (function() {
+            const img = document.getElementById('img-portada');
+            const variantes = ['Portada.jpg', 'portada.jpg', 'Portada.jpeg', 'portada.jpeg', 'Portada.png', 'portada.png', 'caratulas/Portada.jpg', 'caratulas/portada.jpg'];
+            let i = 0;
+            img.onerror = function() {
+                if (i < variantes.length) {
+                    img.src = variantes[i++];
+                }
+            };
+        })();
+    </script>
 
 </body>
 
