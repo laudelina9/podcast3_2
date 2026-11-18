@@ -9,13 +9,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f1f8e9; /* Fondo verde muy suave y cálido */
+            background-color: #f1f8e9;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: linear-gradient(135deg, #2e7d32, #1b5e20); /* Degradé verde vibrante */
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
             color: white;
             text-align: center;
             padding: 35px 20px;
@@ -68,7 +68,7 @@
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
-            border-left: 6px solid #4caf50; /* Acento verde en cada tarjeta de grupo */
+            border-left: 6px solid #4caf50;
         }
 
         .espacio-caratula {
@@ -90,7 +90,7 @@
         audio {
             width: 100%;
             margin-top: 10px;
-            accent-color: #2e7d32; /* Reproductor de audio estilizado en verde */
+            accent-color: #2e7d32;
         }
 
         footer {
@@ -120,8 +120,8 @@
 
     <header>
         <h1>Nuestra Voz Digital</h1>
-        <h3>Podcasts realizados por estudiantes de 3°2° CENS 451 "Paulo Freire" 
-                        9 de Julio (BA) - Argentina</h3>
+        <h3>Podcasts realizados por estudiantes de 3°2° CENS 451 "Paulo Freire"</h3>
+                        <h3>9 de Julio (BA) - Argentina</h3>
     </header>
 
     <div class="portada">
@@ -162,9 +162,8 @@
                 Tu navegador no soporta audio.
             </audio>
 
-            <!-- Comentarios Giscus Grupo 1 -->
             <div class="caja-comentarios">
-                <div class="giscus"></div>
+                <div id="giscus-grupo-1"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -179,6 +178,7 @@
                         data-theme="preferred_color_scheme"
                         data-lang="es"
                         data-loading="lazy"
+                        data-emit="giscus-grupo-1"
                         crossorigin="anonymous"
                         async>
                 </script>
@@ -196,9 +196,8 @@
                 Tu navegador no soporta audio.
             </audio>
 
-            <!-- Comentarios Giscus Grupo 2 -->
             <div class="caja-comentarios">
-                <div class="giscus"></div>
+                <div id="giscus-grupo-2"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -213,6 +212,7 @@
                         data-theme="preferred_color_scheme"
                         data-lang="es"
                         data-loading="lazy"
+                        data-emit="giscus-grupo-2"
                         crossorigin="anonymous"
                         async>
                 </script>
@@ -232,9 +232,8 @@
                 Tu navegador no soporta audio.
             </audio>
 
-            <!-- Comentarios Giscus Grupo 3 -->
             <div class="caja-comentarios">
-                <div class="giscus"></div>
+                <div id="giscus-grupo-3"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -249,6 +248,7 @@
                         data-theme="preferred_color_scheme"
                         data-lang="es"
                         data-loading="lazy"
+                        data-emit="giscus-grupo-3"
                         crossorigin="anonymous"
                         async>
                 </script>
@@ -268,9 +268,8 @@
                 Tu navegador no soporta audio.
             </audio>
 
-            <!-- Comentarios Giscus Grupo 4 -->
             <div class="caja-comentarios">
-                <div class="giscus"></div>
+                <div id="giscus-grupo-4"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -285,6 +284,7 @@
                         data-theme="preferred_color_scheme"
                         data-lang="es"
                         data-loading="lazy"
+                        data-emit="giscus-grupo-4"
                         crossorigin="anonymous"
                         async>
                 </script>
@@ -302,9 +302,8 @@
                 Tu navegador no soporta audio.
             </audio>
 
-            <!-- Comentarios Giscus Grupo 5 -->
             <div class="caja-comentarios">
-                <div class="giscus"></div>
+                <div id="giscus-grupo-5"></div>
                 <script src="https://giscus.app/client.js"
                         data-repo="laudelina9/podcast3_2"
                         data-repo-id="R_kgDOVvSFzQ"
@@ -319,6 +318,7 @@
                         data-theme="preferred_color_scheme"
                         data-lang="es"
                         data-loading="lazy"
+                        data-emit="giscus-grupo-5"
                         crossorigin="anonymous"
                         async>
                 </script>
@@ -332,7 +332,6 @@
         <p>© Prof. Mariela L. Loza. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Respaldo automático por si la portada tiene otra mayúscula o extensión -->
     <script>
         (function() {
             const img = document.getElementById('img-portada');
