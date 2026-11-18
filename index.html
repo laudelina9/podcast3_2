@@ -39,13 +39,40 @@
             margin-top: 10px;
             border-radius: 8px;
         }
+        .portada-principal {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin: 40px auto 20px auto;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            max-width: 800px;
+        }
     </style>
 </head>
 <body>
 
     <header style="text-align: center;">
+        <!-- Portada principal del sitio -->
+        <img src="Portada 3_2.jpg" alt="Portada de la Página" class="portada-principal">
+        
         <h1>Nuestra Voz Digital</h1>
         <p>Espacio de producción radiofónica y podcast de nuestros estudiantes.</p>
+
+        <!-- Audio de bienvenida (Speech) -->
+        <div style="margin-top: 20px; padding: 15px; background: #f1f5f9; border-radius: 8px;">
+            <p><strong>Bienvenida al Espacio:</strong></p>
+            <audio controls>
+                <source src="Speech.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
     </header>
 
     <section>
@@ -53,11 +80,10 @@
 
         <!-- Grupo 1 -->
         <article class="episodio">
-            <img src="caratulas/caratula1.jpg" alt="Carátula Grupo 1" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-            <h2>Grupo 1</h2>
-            <p><strong>Integrantes:</strong> [Nombres]</p>
-            <p>[Descripción del episodio]</p>
-            <!-- Aquí irá el reproductor cuando subas el archivo -->
+            <img src="caratulas/caratula1.jpg" alt="Carátula Grupo 1 - Historias De Vida" width="160" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 1: Historias De Vida</h2>
+            <p><strong>Integrantes:</strong> Paula Acosta - Florencia Castillo - Claudia DeCésare - Rosana Santos</p>
+            <p>Un lugar libre para expresar emociones.</p>
             <audio controls>
                 <source src="episodios/grupo1.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
@@ -87,11 +113,10 @@
 
         <!-- Grupo 2 -->
         <article class="episodio">
-            <img src="caratulas/caratula2.jpg" alt="Carátula Grupo 2" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-            <h2>Grupo 2</h2>
-            <p><strong>Integrantes:</strong> [Nombres]</p>
-            <p>[Descripción del episodio]</p>
-            <!-- Aquí irá el reproductor cuando subas el archivo -->
+            <img src="caratulas/caratula2.jpg" alt="Carátula Grupo 2 - Entre Likes y Seguidores" width="160" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 2: Entre Likes y Seguidores</h2>
+            <p><strong>Integrantes:</strong> Tobías Amado - Victoria Méndez - Román Rosales - Joan Vargas</p>
+            <p>Entre likes y seguidores, describimos lo que hay detrás de las redes.</p>
             <audio controls>
                 <source src="episodios/grupo2.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
@@ -121,12 +146,9 @@
 
         <!-- Grupo 3 -->
         <article class="episodio">
-            <!-- Cambiá carátula3.jpg cuando la subas -->
-            <img src="caratulas/caratula3.jpg" alt="Carátula Grupo 3" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-            <h2>Grupo 3</h2>
-            <p><strong>Integrantes:</strong> [Nombres]</p>
-            <p>[Descripción del episodio]</p>
-            <!-- Espacio listo para video o audio según corresponda -->
+            <h2>Grupo 3: Entre Nosotros, No Estás Solo</h2>
+            <p><strong>Integrantes:</strong> Ignacio Camargo - Magalí Nicolás - Guillermo Orellano - Ezequiel Perotti</p>
+            <p>Dialogamos sobre temas en general.</p>
             <audio controls>
                 <source src="episodios/grupo3.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
@@ -156,10 +178,9 @@
 
         <!-- Grupo 4 -->
         <article class="episodio">
-            <img src="caratulas/caratula4.jpg" alt="Carátula Grupo 4" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
             <h2>Grupo 4</h2>
-            <p><strong>Integrantes:</strong> [Nombres]</p>
-            <p>[Descripción del episodio]</p>
+            <p><strong>Integrantes:</strong> Agustín Altare - Thiago Góngora - Guillermo Orellano - Fiamma Seijo</p>
+            <p>Dialogamos sobre temas profundos que afectan a la sociedad toda, hoy es la Homofobia.</p>
             <audio controls>
                 <source src="episodios/grupo4.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
@@ -189,10 +210,10 @@
 
         <!-- Grupo 5 -->
         <article class="episodio">
-            <img src="caratulas/caratula5.jpg" alt="Carátula Grupo 5" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-            <h2>Grupo 5</h2>
-            <p><strong>Integrantes:</strong> [Nombres]</p>
-            <p>[Descripción del episodio]</p>
+            <img src="caratulas/caratula5.jpeg" alt="Carátula Grupo 5 - ¡Los De Siempre!" width="220" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 5: ¡Los De Siempre!</h2>
+            <p><strong>Integrantes:</strong> Emiliano Aguerrido - Lautaro Ferreyra - Lautaro Linares - Josué Lucero</p>
+            <p>Cómo afecta la tecnología en nuestras vidas y principalmente la Inteligencia Artificial.</p>
             <audio controls>
                 <source src="episodios/grupo5.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
@@ -221,6 +242,11 @@
         </article>
 
     </section>
+
+    <footer>
+        <p>Proyecto Podcast Escolar 2026</p>
+        <p>© Prof. Mariela L. Loza. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
