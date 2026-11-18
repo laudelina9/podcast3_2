@@ -1,192 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Voz Digital - Podcast Escolar</title>
-
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #1f4e79;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .portada {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .portada img {
-            width: 300px;
-            max-width: 90%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-        }
-
-        .descripcion {
-            width: 80%;
-            margin: auto;
-            text-align: center;
             padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
         }
-
-        .episodios {
-            width: 90%;
+        header, section {
             max-width: 800px;
-            margin: auto;
-            padding-bottom: 30px;
-        }
-
-        .episodio {
-            background: white;
-            margin: 20px 0;
+            margin: 0 auto 30px auto;
+            background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 5px #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
-        .espacio-caratula {
-            border: 2px dashed #ccc;
-            padding: 15px;
-            text-align: center;
-            margin-bottom: 15px;
-            color: #666;
-            border-radius: 6px;
-            background-color: #fafafa;
+        h1, h2 {
+            color: #2c3e50;
         }
-
-        audio {
+        .episodio {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .episodio:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        audio, video {
             width: 100%;
             margin-top: 10px;
-        }
-
-        footer {
-            background-color: #1f4e79;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-
-        h2 {
-            color: #1f4e79;
+            border-radius: 8px;
         }
     </style>
 </head>
-
 <body>
 
-    <header>
+    <header style="text-align: center;">
         <h1>Nuestra Voz Digital</h1>
-        <h3>Podcast realizado por estudiantes de 3°2° CENS 451 "Paulo Freire"</h3>
+        <p>Espacio de producción radiofónica y podcast de nuestros estudiantes.</p>
     </header>
 
-    <div class="portada">
-        <img src="Portada 3_2.png" alt="Portada del Podcast" width="400">
-    </div>
-
-    <div class="descripcion">
-        <p>
-            Bienvenidos a nuestro espacio de comunicación digital.
-            En este podcast compartimos historias, opiniones, investigaciones
-            y experiencias sobre temas que impactan en nuestra comunidad.
-        </p>
-    </div>
-
     <section>
-        <div class="episodios">
-            <h2>Presentación</h2>
+        <h2>Episodios de los Grupos</h2>
+
+        <!-- Grupo 1 -->
+        <article class="episodio">
+            <img src="caratulas/caratula1.jpg" alt="Carátula Grupo 1" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 1</h2>
+            <p><strong>Integrantes:</strong> [Nombres]</p>
+            <p>[Descripción del episodio]</p>
+            <!-- Aquí irá el reproductor cuando subas el archivo -->
             <audio controls>
-                <source src="Speech.mp3" type="audio/mp3">
+                <source src="episodios/grupo1.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
-        </div>
-    </section>
 
-    <section class="episodios">
-        <h2>Nuestros Episodios</h2>
-
-       <!-- Grupo 1 -->
-       <article class="episodio">
-    <img src="caratulas/caratula1.jpg" alt="Carátula Grupo 1" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-    <h2>Grupo 1: ¡La Vida Es Así!</h2>
-    <p><strong>Integrantes:</strong> Paula Acosta -  Florencia Castillo - Claudia DeCésare - Rosana Santos</p>
-    <p>Contamos historias, experiencias, desafíos y aprendizajes de personas simples, como vos y yo.</p>
-    <audio controls>
-        <source src="episodios/audio1.mp3" type="audio/mp3">
-        Tu navegador no soporta audio.
-         </audio>
-      </article>
+            <!-- Comentarios Giscus Grupo 1 -->
+            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+                <script src="https://giscus.app/client.js"
+                        data-repo="laudelina9/podcast3_2"
+                        data-repo-id="R_kgDOVvSFzQ"
+                        data-category="General"
+                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
+                        data-mapping="specific"
+                        data-term="Grupo-1"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="preferred_color_scheme"
+                        data-lang="es"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
+        </article>
 
         <!-- Grupo 2 -->
         <article class="episodio">
-             <img src="caratulas/caratula2.jpg" alt="Carátula Grupo 2" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-            <h2>Grupo 2: Entre Likes y Seguidores</h2>
-            <p><strong>Integrantes:</strong> Tobías Amado - Román Rosales - Victoria Méndez - Joan Vargas</p>
-            <p>Describimos lo que hay detrás de las redes.</p>
+            <img src="caratulas/caratula2.jpg" alt="Carátula Grupo 2" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 2</h2>
+            <p><strong>Integrantes:</strong> [Nombres]</p>
+            <p>[Descripción del episodio]</p>
+            <!-- Aquí irá el reproductor cuando subas el archivo -->
             <audio controls>
-                <source src="episodios/audio2.mp3" type="audio/mp3">
+                <source src="episodios/grupo2.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
+
+            <!-- Comentarios Giscus Grupo 2 -->
+            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+                <script src="https://giscus.app/client.js"
+                        data-repo="laudelina9/podcast3_2"
+                        data-repo-id="R_kgDOVvSFzQ"
+                        data-category="General"
+                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
+                        data-mapping="specific"
+                        data-term="Grupo-2"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="preferred_color_scheme"
+                        data-lang="es"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
         </article>
 
         <!-- Grupo 3 -->
         <article class="episodio">
-            <div class="espacio-caratula">
-                <span>[ Espacio para carátula - Grupo 3 ]</span>
-            </div>
-            <h2>Grupo 3: Entre Nosotros, NO Estás Solo</h2>
-            <p><strong>Integrantes:</strong> Ignacio Camargo - Magalí Nicolás - Guillermo Orellano - Ezequiel Perotti</p>
-            <p>Experiencias y testimonios de personas que atraviesan problemas de salud mental.</p>
+            <!-- Cambiá carátula3.jpg cuando la subas -->
+            <img src="caratulas/caratula3.jpg" alt="Carátula Grupo 3" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 3</h2>
+            <p><strong>Integrantes:</strong> [Nombres]</p>
+            <p>[Descripción del episodio]</p>
+            <!-- Espacio listo para video o audio según corresponda -->
             <audio controls>
-                <source src="episodios/audio3.mp3" type="audio/mp3">
+                <source src="episodios/grupo3.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
+
+            <!-- Comentarios Giscus Grupo 3 -->
+            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+                <script src="https://giscus.app/client.js"
+                        data-repo="laudelina9/podcast3_2"
+                        data-repo-id="R_kgDOVvSFzQ"
+                        data-category="General"
+                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
+                        data-mapping="specific"
+                        data-term="Grupo-3"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="preferred_color_scheme"
+                        data-lang="es"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
         </article>
 
         <!-- Grupo 4 -->
         <article class="episodio">
-            <div class="espacio-caratula">
-                <span>[ Espacio para carátula - Grupo 4 ]</span>
-            </div>
-            <h2>Grupo 4: XXX</h2>
-            <p><strong>Integrantes:</strong> Agustín Altare -  Thiago Góngora - Gabriel González - Fiamma Seijo</p>
-            <p>Vamos a tratar el tema de la Homofobia.</p>
+            <img src="caratulas/caratula4.jpg" alt="Carátula Grupo 4" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 4</h2>
+            <p><strong>Integrantes:</strong> [Nombres]</p>
+            <p>[Descripción del episodio]</p>
             <audio controls>
-                <source src="episodios/audio4.mp3" type="audio/mp3">
+                <source src="episodios/grupo4.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
+
+            <!-- Comentarios Giscus Grupo 4 -->
+            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+                <script src="https://giscus.app/client.js"
+                        data-repo="laudelina9/podcast3_2"
+                        data-repo-id="R_kgDOVvSFzQ"
+                        data-category="General"
+                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
+                        data-mapping="specific"
+                        data-term="Grupo-4"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="preferred_color_scheme"
+                        data-lang="es"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
         </article>
 
         <!-- Grupo 5 -->
         <article class="episodio">
-            <img src="caratulas/caratula5.jpeg" alt="Carátula Grupo 5" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
-            <h2>Grupo 5: Los de Siempre</h2>
-            <p><strong>Integrantes:</strong> Emiliano Aguerrido - Lautaro Ferreyra - Lautaro Linares - Josué Lucero</p>
-            <p>Cómo afecta la Inteligencia Artificial en nuestras vidas.</p>
+            <img src="caratulas/caratula5.jpg" alt="Carátula Grupo 5" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <h2>Grupo 5</h2>
+            <p><strong>Integrantes:</strong> [Nombres]</p>
+            <p>[Descripción del episodio]</p>
             <audio controls>
-                <source src="audio5.mp3" type="audio/mpeg">
+                <source src="episodios/grupo5.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
+
+            <!-- Comentarios Giscus Grupo 5 -->
+            <div style="margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+                <script src="https://giscus.app/client.js"
+                        data-repo="laudelina9/podcast3_2"
+                        data-repo-id="R_kgDOVvSFzQ"
+                        data-category="General"
+                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
+                        data-mapping="specific"
+                        data-term="Grupo-5"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="bottom"
+                        data-theme="preferred_color_scheme"
+                        data-lang="es"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+            </div>
         </article>
 
     </section>
 
-    <footer>
-        <p>Proyecto Podcast Escolar 2026</p>
-        <p>© Prof. Mariela L. Loza. Todos los derechos reservados.</p>
-    </footer>
-
 </body>
-
 </html>
