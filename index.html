@@ -81,10 +81,26 @@
             background-color: #f1f8e9;   
         }
 
-        .caja-comentarios {
-            margin-top: 25px;
+        .zona-interaccion {
+            margin-top: 20px;
             border-top: 1px solid #e8f5e9;
             padding-top: 15px;
+            text-align: right;
+        }
+
+        .btn-comentar {
+            background-color: #2e7d32;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn-comentar:hover {
+            background-color: #1b5e20;
         }
 
         audio {
@@ -120,7 +136,7 @@
 
     <header>
         <h1>Nuestra Voz Digital</h1>
-        <h3>Podcasts realizados por estudiantes de 3°2° CENS 451 "Paulo Freire"</h3>
+        <h3>Podcasts realizados por estudiantes de 3°2° CENS 451 "Paulo Freire"<h3> 
                         <h3>9 de Julio (BA) - Argentina</h3>
     </header>
 
@@ -158,30 +174,12 @@
             <p><strong>Integrantes:</strong> Paula Acosta - Florencia Castillo - Claudia DeCésare - Rosana Santos</p>
             <p>Un lugar libre para expresar emociones.</p>
             <audio controls>
-                <source src="episodios/grupo1.mp3" type="audio/mpeg">
+                <source src="episodios/audio.mp3" type="audio/mp3">
                 Tu navegador no soporta audio.
             </audio>
 
-            <div class="caja-comentarios">
-                <div id="giscus-grupo-1"></div>
-                <script src="https://giscus.app/client.js"
-                        data-repo="laudelina9/podcast3_2"
-                        data-repo-id="R_kgDOVvSFzQ"
-                        data-category="General"
-                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
-                        data-mapping="specific"
-                        data-term="Grupo-1"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="preferred_color_scheme"
-                        data-lang="es"
-                        data-loading="lazy"
-                        data-emit="giscus-grupo-1"
-                        crossorigin="anonymous"
-                        async>
-                </script>
+            <div class="zona-interaccion">
+                <a href="mailto:mlloza@gmail.com?subject=Comentario sobre Grupo 1 - Historias De Vida" class="btn-comentar">💬 Dejar opinión al grupo</a>
             </div>
         </article>
 
@@ -192,30 +190,12 @@
             <p><strong>Integrantes:</strong> Tobías Amado - Victoria Méndez - Román Rosales - Joan Vargas</p>
             <p>Entre likes y seguidores, describimos lo que hay detrás de las redes.</p>
             <audio controls>
-                <source src="episodios/grupo2.mp3" type="audio/mpeg">
+                <source src="episodios/audio2.mp3" type="audio/mp3">
                 Tu navegador no soporta audio.
             </audio>
 
-            <div class="caja-comentarios">
-                <div id="giscus-grupo-2"></div>
-                <script src="https://giscus.app/client.js"
-                        data-repo="laudelina9/podcast3_2"
-                        data-repo-id="R_kgDOVvSFzQ"
-                        data-category="General"
-                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
-                        data-mapping="specific"
-                        data-term="Grupo-2"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="preferred_color_scheme"
-                        data-lang="es"
-                        data-loading="lazy"
-                        data-emit="giscus-grupo-2"
-                        crossorigin="anonymous"
-                        async>
-                </script>
+            <div class="zona-interaccion">
+                <a href="mailto:mlloza@gmail.com?subject=Comentario sobre Grupo 2 - Entre Likes y Seguidores" class="btn-comentar">💬 Dejar opinión al grupo</a>
             </div>
         </article>
 
@@ -228,64 +208,30 @@
             <p><strong>Integrantes:</strong> Ignacio Camargo - Magalí Nicolás - Guillermo Orellano - Ezequiel Perotti</p>
             <p>Dialogamos sobre temas en general.</p>
             <audio controls>
-                <source src="episodios/audio3.mp3" type="audio/mpeg">
+                <source src="episodios/audio3.mp3" type="audio/mp3">
                 Tu navegador no soporta audio.
             </audio>
 
-            <div class="caja-comentarios">
-                <div id="giscus-grupo-3"></div>
-                <script src="https://giscus.app/client.js"
-                        data-repo="laudelina9/podcast3_2"
-                        data-repo-id="R_kgDOVvSFzQ"
-                        data-category="General"
-                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
-                        data-mapping="specific"
-                        data-term="Grupo-3"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="preferred_color_scheme"
-                        data-lang="es"
-                        data-loading="lazy"
-                        data-emit="giscus-grupo-3"
-                        crossorigin="anonymous"
-                        async>
-                </script>
+            <div class="zona-interaccion">
+                <a href="mailto:mlloza@gmail.com?subject=Comentario sobre Grupo 3 - Entre Nosotros" class="btn-comentar">💬 Dejar opinión al grupo</a>
             </div>
         </article>
 
         <!-- Grupo 4 -->
         <article class="episodio">
-            <img src="caratulas/caratula4.jpg" alt="Carátula Grupo 4" width="150" style="border-radius: 8px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+            <div class="espacio-caratula">
+                <span>[ Espacio para carátula - Grupo 4 ]</span>
+            </div>
             <h2>Grupo 4: Más Allá de los Prejuicios</h2>
             <p><strong>Integrantes:</strong> Agustín Altare - Thiago Góngora - Guillermo Orellano - Fiamma Seijo</p>
-            <p>Charla sobre concientización y el orgullo en la comunidad actual.</p>
+            <p>Charla sobre Concientización y el Orgullo en la comunidad actual.</p>
             <audio controls>
-                <source src="episodios/audio4.mp3" type="audio/mpeg">
+                <source src="episodios/audio4.mp3" type="audio/mp3">
                 Tu navegador no soporta audio.
             </audio>
 
-            <div class="caja-comentarios">
-                <div id="giscus-grupo-4"></div>
-                <script src="https://giscus.app/client.js"
-                        data-repo="laudelina9/podcast3_2"
-                        data-repo-id="R_kgDOVvSFzQ"
-                        data-category="General"
-                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
-                        data-mapping="specific"
-                        data-term="Grupo-4"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="preferred_color_scheme"
-                        data-lang="es"
-                        data-loading="lazy"
-                        data-emit="giscus-grupo-4"
-                        crossorigin="anonymous"
-                        async>
-                </script>
+            <div class="zona-interaccion">
+                <a href="mailto:mlloza@gmail.com?subject=Comentario sobre Grupo 4 - Homofobia" class="btn-comentar">💬 Dejar opinión al grupo</a>
             </div>
         </article>
 
@@ -296,30 +242,12 @@
             <p><strong>Integrantes:</strong> Emiliano Aguerrido - Lautaro Ferreyra - Lautaro Linares - Josué Lucero</p>
             <p>Cómo afecta la tecnología en nuestras vidas y principalmente la Inteligencia Artificial.</p>
             <audio controls>
-                <source src="episodios/audio5.mp3" type="audio/mpeg">
+                <source src="episodios/audio5.mp3" type="audio/mp3">
                 Tu navegador no soporta audio.
             </audio>
 
-            <div class="caja-comentarios">
-                <div id="giscus-grupo-5"></div>
-                <script src="https://giscus.app/client.js"
-                        data-repo="laudelina9/podcast3_2"
-                        data-repo-id="R_kgDOVvSFzQ"
-                        data-category="General"
-                        data-category-id="DIC_kwDOVvSFzc4DLcD3"
-                        data-mapping="specific"
-                        data-term="Grupo-5"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="preferred_color_scheme"
-                        data-lang="es"
-                        data-loading="lazy"
-                        data-emit="giscus-grupo-5"
-                        crossorigin="anonymous"
-                        async>
-                </script>
+            <div class="zona-interaccion">
+                <a href="mailto:mlloza@gmail.com?subject=Comentario sobre Grupo 5 - ¡Los De Siempre!" class="btn-comentar">💬 Dejar opinión al grupo</a>
             </div>
         </article>
 
@@ -330,6 +258,7 @@
         <p>© Prof. Mariela L. Loza. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Respaldo automático por si la portada tiene otra mayúscula o extensión -->
     <script>
         (function() {
             const img = document.getElementById('img-portada');
