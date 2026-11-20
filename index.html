@@ -85,22 +85,70 @@
             margin-top: 20px;
             border-top: 1px solid #e8f5e9;
             padding-top: 15px;
-            text-align: right;
+            text-align: left;
+        }
+
+        .zona-interaccion h4 {
+            margin: 0 0 10px 0;
+            color: #2e7d32;
+            font-size: 1em;
+        }
+
+        .form-comentario {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-comentario input[type="text"],
+        .form-comentario textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            border: 1px solid #a5d6a7;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            background-color: #f9fdf7;
+            color: #2c3e50;
+        }
+
+        .form-comentario input[type="text"]:focus,
+        .form-comentario textarea:focus {
+            outline: none;
+            border-color: #2e7d32;
+            background-color: #ffffff;
         }
 
         .btn-comentar {
             background-color: #2e7d32;
             color: white;
-            padding: 8px 16px;
+            padding: 9px 18px;
+            border: none;
             border-radius: 6px;
             text-decoration: none;
-            font-size: 0.9em;
+            font-size: 0.95em;
+            font-weight: bold;
+            cursor: pointer;
+            align-self: flex-end;
             display: inline-block;
             transition: background 0.3s;
         }
 
         .btn-comentar:hover {
             background-color: #1b5e20;
+        }
+
+        .btn-comentar:disabled {
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+
+        .estado-envio {
+            margin: 4px 0 0 0;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-align: right;
         }
 
         audio {
@@ -179,7 +227,14 @@
             </audio>
 
             <div class="zona-interaccion">
-                <a href="mailto:laudelina026@gmail.com?subject=Comentario sobre Grupo 1 - Historias de Vida" class="btn-comentar">💬 Dejar opinión al grupo</a>
+                <h4>💬 Dejar opinión al grupo</h4>
+                <form class="form-comentario">
+                    <input type="hidden" name="Grupo" value="Grupo 1: Historias de Vida">
+                    <input type="text" name="Nombre" placeholder="Tu nombre (opcional)">
+                    <textarea name="Mensaje" rows="3" placeholder="Escribí acá tu comentario..." required></textarea>
+                    <button type="submit" class="btn-comentar">Enviar comentario</button>
+                    <p class="estado-envio"></p>
+                </form>
             </div>
         </article>
 
@@ -195,7 +250,14 @@
             </audio>
 
             <div class="zona-interaccion">
-                <a href="mailto:laudelina026@gmail.com?subject=Comentario sobre Grupo 2 - Entre Likes y Seguidores" class="btn-comentar">💬 Dejar opinión al grupo</a>
+                <h4>💬 Dejar opinión al grupo</h4>
+                <form class="form-comentario">
+                    <input type="hidden" name="Grupo" value="Grupo 2: Entre Likes y Seguidores">
+                    <input type="text" name="Nombre" placeholder="Tu nombre (opcional)">
+                    <textarea name="Mensaje" rows="3" placeholder="Escribí acá tu comentario..." required></textarea>
+                    <button type="submit" class="btn-comentar">Enviar comentario</button>
+                    <p class="estado-envio"></p>
+                </form>
             </div>
         </article>
 
@@ -213,7 +275,14 @@
             </audio>
 
             <div class="zona-interaccion">
-                <a href="mailto:laudelina026@gmail.com?subject=Comentario sobre Grupo 3 - Entre Nosotros" class="btn-comentar">💬 Dejar opinión al grupo</a>
+                <h4>💬 Dejar opinión al grupo</h4>
+                <form class="form-comentario">
+                    <input type="hidden" name="Grupo" value="Grupo 3: Entre Nosotros, No Estás Solo">
+                    <input type="text" name="Nombre" placeholder="Tu nombre (opcional)">
+                    <textarea name="Mensaje" rows="3" placeholder="Escribí acá tu comentario..." required></textarea>
+                    <button type="submit" class="btn-comentar">Enviar comentario</button>
+                    <p class="estado-envio"></p>
+                </form>
             </div>
         </article>
 
@@ -229,7 +298,14 @@
             </audio>
 
             <div class="zona-interaccion">
-                <a href="mailto:laudelina026@gmail.com?subject=Comentario sobre Grupo 4 - Homofobia" class="btn-comentar">💬 Dejar opinión al grupo</a>
+                <h4>💬 Dejar opinión al grupo</h4>
+                <form class="form-comentario">
+                    <input type="hidden" name="Grupo" value="Grupo 4: Más Allá de los Prejuicios">
+                    <input type="text" name="Nombre" placeholder="Tu nombre (opcional)">
+                    <textarea name="Mensaje" rows="3" placeholder="Escribí acá tu comentario..." required></textarea>
+                    <button type="submit" class="btn-comentar">Enviar comentario</button>
+                    <p class="estado-envio"></p>
+                </form>
             </div>
         </article>
 
@@ -245,7 +321,14 @@
             </audio>
 
             <div class="zona-interaccion">
-                <a href="mailto:laudelina026@gmail.com?subject=Comentario sobre Grupo 5 - ¡Los De Siempre!" class="btn-comentar">💬 Dejar opinión al grupo</a>
+                <h4>💬 Dejar opinión al grupo</h4>
+                <form class="form-comentario">
+                    <input type="hidden" name="Grupo" value="Grupo 5: ¡Los De Siempre!">
+                    <input type="text" name="Nombre" placeholder="Tu nombre (opcional)">
+                    <textarea name="Mensaje" rows="3" placeholder="Escribí acá tu comentario..." required></textarea>
+                    <button type="submit" class="btn-comentar">Enviar comentario</button>
+                    <p class="estado-envio"></p>
+                </form>
             </div>
         </article>
 
@@ -261,7 +344,14 @@
             </audio>
 
             <div class="zona-interaccion">
-                <a href="mailto:laudelina026@gmail.com?subject=Comentario sobre Grupo 6 - El Fútbol" class="btn-comentar">💬 Dejar opinión al grupo</a>
+                <h4>💬 Dejar opinión al grupo</h4>
+                <form class="form-comentario">
+                    <input type="hidden" name="Grupo" value="Grupo 6: Hablemos de Fútbol">
+                    <input type="text" name="Nombre" placeholder="Tu nombre (opcional)">
+                    <textarea name="Mensaje" rows="3" placeholder="Escribí acá tu comentario..." required></textarea>
+                    <button type="submit" class="btn-comentar">Enviar comentario</button>
+                    <p class="estado-envio"></p>
+                </form>
             </div>
         </article>
     </section>
@@ -282,6 +372,69 @@
                     img.src = variantes[i++];
                 }
             };
+        })();
+    </script>
+
+    <!-- Envío de comentarios sin salir de la página -->
+    <script>
+        (function() {
+            const URL_FORMSPREE = "https://formspree.io/f/TU_CODIGO_AQUI";
+
+            document.querySelectorAll(".form-comentario").forEach(function(form) {
+                form.addEventListener("submit", async function(e) {
+                    e.preventDefault();
+
+                    const boton = form.querySelector(".btn-comentar");
+                    const estado = form.querySelector(".estado-envio");
+                    const inputNombre = form.querySelector('input[name="Nombre"]');
+                    const textareaMensaje = form.querySelector('textarea[name="Mensaje"]');
+
+                    const nombre = (inputNombre.value || "").trim() || "Anónimo";
+                    const mensaje = (textareaMensaje.value || "").trim();
+
+                    if (!mensaje) {
+                        estado.textContent = "Escribí un comentario antes de enviar.";
+                        estado.style.color = "#c62828";
+                        return;
+                    }
+
+                    if (URL_FORMSPREE.indexOf("TU_CODIGO_AQUI") !== -1) {
+                        estado.textContent = "Falta poner el enlace de Formspree en el código.";
+                        estado.style.color = "#c62828";
+                        return;
+                    }
+
+                    boton.disabled = true;
+                    boton.textContent = "Enviando...";
+                    estado.textContent = "";
+
+                    const datos = new FormData(form);
+                    datos.set("Nombre", nombre);
+
+                    try {
+                        const resp = await fetch(URL_FORMSPREE, {
+                            method: "POST",
+                            body: datos,
+                            headers: { "Accept": "application/json" }
+                        });
+
+                        if (resp.ok) {
+                            form.reset();
+                            estado.textContent = "¡Comentario enviado! Gracias por participar.";
+                            estado.style.color = "#2e7d32";
+                        } else {
+                            estado.textContent = "No se pudo enviar. Probá de nuevo.";
+                            estado.style.color = "#c62828";
+                        }
+                    } catch (err) {
+                        estado.textContent = "Error de conexión. Revisá internet e intentá otra vez.";
+                        estado.style.color = "#c62828";
+                    } finally {
+                        boton.disabled = false;
+                        boton.textContent = "Enviar comentario";
+                    }
+                });
+            });
         })();
     </script>
 
