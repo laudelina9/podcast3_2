@@ -375,10 +375,10 @@
         })();
     </script>
 
-    <!-- Envío de comentarios sin salir de la página -->
+    <!-- Envío de comentarios a Google Sheets sin salir de la página -->
     <script>
         (function() {
-            const URL_FORMSPREE = "https://formspree.io/f/TU_CODIGO_AQUI";
+            const URL_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbw2mSLXwSEAeU9erbV71Oqg_aeOKTP61RMI2lMNpehr1GWwYhnVTntCfoYVCbJy7sM_Mw/exec";
 
             document.querySelectorAll(".form-comentario").forEach(function(form) {
                 form.addEventListener("submit", async function(e) {
@@ -398,34 +398,28 @@
                         return;
                     }
 
-                    if (URL_FORMSPREE.indexOf("TU_CODIGO_AQUI") !== -1) {
-                        estado.textContent = "Falta poner el enlace de Formspree en el código.";
-                        estado.style.color = "#c62828";
-                        return;
-                    }
-
                     boton.disabled = true;
                     boton.textContent = "Enviando...";
                     estado.textContent = "";
 
-                    const datos = new FormData(form);
-                    datos.set("Nombre", nombre);
+                    const parametros = new URLSearchParams();
+                    parametros.append("Grupo", form.querySelector('input[name="Grupo"]').value);
+                    parametros.append("Nombre", nombre);
+                    parametros.append("Mensaje", mensaje);
 
                     try {
-                        const resp = await fetch(URL_FORMSPREE, {
+                        await fetch(URL_APPS_SCRIPT, {
                             method: "POST",
-                            body: datos,
-                            headers: { "Accept": "application/json" }
+                            mode: "no-cors",
+                            headers: {
+                                "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+                            },
+                            body: parametros.toString()
                         });
 
-                        if (resp.ok) {
-                            form.reset();
-                            estado.textContent = "¡Comentario enviado! Gracias por participar.";
-                            estado.style.color = "#2e7d32";
-                        } else {
-                            estado.textContent = "No se pudo enviar. Probá de nuevo.";
-                            estado.style.color = "#c62828";
-                        }
+                        form.reset();
+                        estado.textContent = "¡Comentario enviado! Gracias por participar.";
+                        estado.style.color = "#2e7d32";
                     } catch (err) {
                         estado.textContent = "Error de conexión. Revisá internet e intentá otra vez.";
                         estado.style.color = "#c62828";
